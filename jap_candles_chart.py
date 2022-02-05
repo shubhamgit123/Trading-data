@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from mplfinance.original_flavor import candlestick_ohlc
 import matplotlib.dates as mpdates
-l
+
 def stock_info(t, sym, api):
     url = "https://www.alphavantage.co/query?function=TIME_SERIES_"+t+"&symbol="+sym+".BSE&outputsize=full&apikey="+api
     response = requests.get(url)
